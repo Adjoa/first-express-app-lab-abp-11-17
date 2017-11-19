@@ -15,8 +15,11 @@ const express = require('express')
 const app = express()
 
 // Build Your Route Here
-
-
+// app.get(URL, CALLBACK)
+app.get('/', function(request, response){
+  console.log(request)
+  console.log(reponse)
+})
 
 
 module.exports = app
